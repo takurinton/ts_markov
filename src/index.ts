@@ -46,8 +46,7 @@ const makeSentence = (dict: Morpheme): string => {
     now = dict[START][Math.floor(Math.random() * dict[START].length)]; // いい感じにしてる(ぇ
     result += now;
     while (now !== END) {
-        console.log(now);
-        now = dict[START][Math.floor(Math.random() * dict[now].length)];
+        now = dict[now][Math.floor(Math.random() * dict[now].length)];
         result += now;
     }
     result = result.replace(END, '。')
