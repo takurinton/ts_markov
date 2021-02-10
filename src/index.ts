@@ -1,6 +1,6 @@
 import text from './text';
 
-const arrangeText = (text: string) => {
+const arrangeText = (text: string): string => {
     text = text.replace(/\n/g, '。');
     text = text.replace(/[\?\!？！]/g, '。');
     text = text.replace(/[-|｜:：・]/g, '。');
