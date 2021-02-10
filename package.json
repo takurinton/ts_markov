@@ -1,0 +1,23 @@
+{
+  "name": "ts_markov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run dev",
+    "dev": "node dist/index.js", 
+    "build": "npx tsc", 
+    "clear": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tiny-segmenter": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.19.16",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.4"
+  }
+}
