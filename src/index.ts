@@ -48,16 +48,18 @@ const makeSentence = (dict: Morpheme): string => {
     while (now !== END) {
         now = dict[now][Math.floor(Math.random() * dict[now].length)];
         result += now;
-    }
+    };
     result = result.replace(END, '。')
     return result;
-}
+};
 
 const main = () => {
     const _text: string = arrangeText(text);
     const dict: Morpheme = makeDict(_text);
     const sentence: string = makeSentence(dict);
     console.log(sentence);
-}
+};
 
-main();
+for (var i = 0; i < 5; i++) {
+    main();
+};
