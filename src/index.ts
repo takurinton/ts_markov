@@ -1,5 +1,2 @@
-const helloWorld = (name: string) => {
-    return name;
-};
+import text from './text';
 
-console.log(helloWorld('takurinton'));
